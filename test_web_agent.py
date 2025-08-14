@@ -140,15 +140,15 @@ async def main():
     print("🚀 Web Scraper Agent Test")
     print("=" * 60)
     
-    # Check for API key
-    try:
-        api_key = get_openai_api_key()
-        print("✅ OpenAI API key loaded successfully")
-    except ValueError as e:
-        print(f"❌ {e}")
-        print("\nPlease create a .env file with your OpenAI API key:")
-        print("OPENAI_API_KEY=your_api_key_here")
+    # Hardcoded API key - REPLACE WITH YOUR ACTUAL KEY
+    api_key = "YOUR_OPENAI_API_KEY_HERE"  # <-- REPLACE THIS WITH YOUR ACTUAL OPENAI API KEY
+    
+    if api_key == "sk-YOUR-API-KEY-HERE":
+        print("❌ Please replace 'sk-YOUR-API-KEY-HERE' with your actual OpenAI API key in test_web_agent.py")
+        print("   Edit line 118 in the file")
         return
+    
+    print("✅ OpenAI API key configured")
     
     # Initialize OpenAI client
     client = OpenAI(api_key=api_key)
