@@ -1,0 +1,5 @@
+# Claude Code Environment Variables
+# Copy this file to .env and add your actual API key
+
+# Get your API key from: https://console.anthropic.com/
+ANTHROPIC_API_KEY=your_api_key_here
